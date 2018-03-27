@@ -119,9 +119,9 @@ public class FindbugsConfiguration {
               + " Please build project before executing sonar or check the location of compiled classes to"
               + " make it possible for Findbugs to analyse your (sub)project ({}).", fileSystem.baseDir().getPath());
 
-      if (hasSourceFiles()) { //This excludes test source files
-        throw new IllegalStateException(format("One (sub)project contains Java source files that are not compiled (%s).",
-                fileSystem.baseDir().getPath()));
+      // if (hasSourceFiles()) { //This excludes test source files
+      //   throw new IllegalStateException(format("One (sub)project contains Java source files that are not compiled (%s).",
+      //           fileSystem.baseDir().getPath()));
       }
     }
 
