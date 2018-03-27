@@ -122,7 +122,7 @@ public class FindbugsConfiguration {
       // if (hasSourceFiles()) { //This excludes test source files
       //   throw new IllegalStateException(format("One (sub)project contains Java source files that are not compiled (%s).",
       //           fileSystem.baseDir().getPath()));
-      }
+      // }
     }
 
     if (hasJspFiles && !hasPrecompiledJsp) {
